@@ -6,31 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-02</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/font/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-    <wrapper style="display: block; height: 10000px;">
-        <div class="sticky-header">
+    <div class="wrapper" id="home" style="height: 10000px;">
+        <header class="sticky-header">
             <div class="content">
                 <nav class="navbar">
-                    <a href="#!"><img src="./assets/img/logo.svg" alt="Lession." class="logo"></a>
+                    <a href="/"><img src="./assets/img/logo.svg" alt="Lesson." class="logo"></a>
                     <ul class="list">
-                        <li class="item"><a href="#!">Home</a></li>
-                        <li class="item"><a href="#!">Courses</a></li>
+                        <li class="item"><a href="#home">Home</a></li>
+                        <li class="item"><a href="#courses">Courses</a></li>
                         <li class="item"><a href="#!">Pricing</a></li>
                         <li class="item"><a href="#!">Reviews</a></li>
                     </ul>
                     <a href="#!" class="btn">Sign Up</a>
                 </nav>
             </div>
-        </div>
+        </header>
         <main>
             <div class="hero">
                 <div class="content">
                     <div class="container">
-                        <img src="./assets/img/hero-img.png" alt="courses-img" class="hero-img">
+                        <div class="category">
+                            <img src="./assets/img/hero-img.png" alt="category-image" class="hero-img">
+                            <div class="category-card">
+                                <div class="category-item">
+                                    <img src="./assets/img/category-1.svg" alt="" class="image">
+                                    <div class="category-detail">
+                                        <p class="category-stat">20 Courses</p>
+                                        <p class="category-name">UI/UX Design</p>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="./assets/img/category-2.svg" alt="" class="image">
+                                    <div class="category-detail">
+                                        <p class="category-stat">20 Courses</p>
+                                        <p class="category-name">Development</p>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="./assets/img/category-3.svg" alt="" class="image">
+                                    <div class="category-detail">
+                                        <p class="category-stat">30 Courses</p>
+                                        <p class="category-name">Marketing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="hero-info">
                             <h1 class="title line-clamp" style="--line-clamp: 4">Learn without limits and spread knowledge.</h1>
                             <p class="desc line-clamp" style="--line-clamp: 4">Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities
@@ -55,8 +82,87 @@
                     </div>
                 </div>
             </div>
+
+            <div id="courses" class="courses">
+                <div class="content">
+                    <div class="top-row">
+                        <div class="courses-header">
+                            <h2 class="title">Our popular courses</h2>
+                            <p class="desc">Build new skills with new trendy courses and shine for the next future career.</p>
+                        </div>
+                        <div class="courses-btn">
+                            <a href="#!" class="navigation-btn">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                            <a href="#!" class="navigation-btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="item">
+                            <a href="#!"><img src="./assets/img/course-img-1.png" alt="course-img" class="courses-img"></a>
+                            <div class="courses-info">
+                                <div class="row">
+                                    <a href="#!" class="link">
+                                        <h3 class="courses-title line-clamp">Basic web design</h3>
+                                    </a>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses-desc line-clamp" style="--line-clamp: 4;">Get the best course, gain knowledge and shine for your future career.</p>
+                                <div class="bottom-row">
+                                    <p class="courses-price">$120.75</p>
+                                    <a href="#!" class="btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="#!"><img src="./assets/img/course-img-2.png" alt="course-img" class="courses-img"></a>
+                            <div class="courses-info">
+                                <div class="row">
+                                    <a href="#!" class="link">
+                                        <h3 class="courses-title line-clamp">UI/UX design</h3>
+                                    </a>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses-desc line-clamp" style="--line-clamp: 4;">Get the best course, gain knowledge and shine for your future career.</p>
+                                <div class="bottom-row">
+                                    <p class="courses-price">$120.75</p>
+                                    <a href="#!" class="btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="#!"><img src="./assets/img/course-img-3.png" alt="course-img" class="courses-img"></a>
+                            <div class="courses-info">
+                                <div class="row">
+                                    <a href="#!" class="link">
+                                        <h3 class="courses-title line-clamp">Web App design </h3>
+                                    </a>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses-desc line-clamp" style="--line-clamp: 4;">Get the best course, gain knowledge and shine for your future career.
+                                </p>
+                                <div class="bottom-row">
+                                    <p class="courses-price">$120.75</p>
+                                    <a href="#!" class="btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-    </wrapper>
+    </div>
 </body>
 
 </html>

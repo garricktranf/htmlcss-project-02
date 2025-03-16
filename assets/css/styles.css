@@ -5,6 +5,12 @@
 :root {
     --primary-color: #171100;
     --secondary-color: #FFB900;
+    --desc-color: #5F5B53;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 html {
@@ -18,7 +24,8 @@ body {
 
 /* common */
 .content {
-    width: 1170px;
+    max-width: 1170px;
+    width: calc(100% - 46px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -102,7 +109,7 @@ a {
 .sticky-header .item a {
     display: inline-block;
     padding: 8px 16px;
-    color: #5F5B53;
+    color: var(--desc-color);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -127,15 +134,59 @@ a {
     display: flex;
 }
 
-.hero .hero-img {
-    width: 40.17%;
-    height: 685px;
-    object-fit: cover;
-    border-radius: 20px;
+.hero .category {
+    position: relative;
+    width: 100%;
     margin-right: 230px;
 }
 
+.hero .category-card {
+    position: absolute;
+    right: -100px;
+    bottom: 48px;
+    width: 270px;
+    border-radius: 12px;
+    padding: 28px 0 28px 24px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .category-item {
+    display: flex;
+    align-items: center;
+}
+
+.category-item+.category-item {
+    margin-top: 14px;
+}
+
+.hero .category-detail {
+    margin-left: 16px;
+}
+
+.hero .category-stat {
+    color: var(--desc-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.hero .category-name {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero .hero-img {
+    width: 100%;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .hero .hero-info {
+    width: 100%;
     padding-top: 64px;
 }
 
@@ -150,7 +201,7 @@ a {
 }
 
 .hero .desc {
-    color: #5F5B53;
+    color: var(--desc-color);
     font-family: Poppins;
     font-size: 1.8rem;
     font-weight: 400;
@@ -205,7 +256,7 @@ a {
 }
 
 .hero .stat-title {
-    color: #5F5B53;
+    color: var(--desc-color);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
@@ -231,9 +282,144 @@ a {
 }
 
 .hero .stat-desc {
-    color: #5F5B53;
+    color: var(--desc-color);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
     vertical-align: bottom;
+}
+
+/* courses */
+.courses {
+    padding: 200px 0;
+}
+
+.courses .top-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.courses .courses-header {
+    max-width: 39.1%;
+}
+
+.courses .title {
+    color: var(--primary-color);
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+    margin-bottom: 16px;
+}
+
+.courses .desc {
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.courses .courses-btn {
+    display: flex;
+    gap: 18px;
+    margin-left: auto;
+}
+
+.courses .navigation-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 999px;
+}
+
+.courses .navigation-btn:hover {
+    color: #FFF;
+    background-color: var(--secondary-color);
+}
+
+.courses .list {
+    display: flex;
+    gap: 30px;
+}
+
+.courses .item {
+    display: flex;
+    flex-direction: column;
+    width: 31.6%;
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    transition: box-shadow 0.3s ease;
+}
+
+.courses .item:hover {
+    border: none;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses .courses-img {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.courses .courses-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px 22px 22px;
+}
+
+.courses-info .row {
+    display: flex;
+    align-items: center;
+}
+
+.courses-info .link {
+    width: 82%;
+}
+
+.courses-info .courses-title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    word-break: break-all;
+}
+
+.courses-info .rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    color: var(--secondary-color);
+}
+
+.courses .courses-desc {
+    color: var(--desc-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.courses .bottom-row {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.courses .bottom-row .btn {
+    margin-left: auto;
+}
+
+.courses .bottom-row .btn:hover {
+    background-color: var(--secondary-color);
 }
