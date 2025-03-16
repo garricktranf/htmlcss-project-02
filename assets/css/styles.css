@@ -83,8 +83,7 @@ a {
     position: relative;
 }
 
-.sticky-header .item:hover,
-.sticky-header .item:focus-within a {
+.sticky-header .item:hover {
     color: var(--primary-color);
     text-shadow: 0 0 1px var(--primary-color);
 }
@@ -102,7 +101,6 @@ a {
     transition: opacity 0.3s ease;
 }
 
-.sticky-header .item:focus-within::before,
 .sticky-header .item:hover::before {
     opacity: 1;
 }
@@ -487,4 +485,84 @@ a {
     left: -30px;
     width: 30px;
     height: 28px;
+}
+
+/* subscription */
+.subscription {
+    padding: 200px 0;
+}
+
+.subscription .top-row {
+    display: flex;
+    margin-bottom: 233px;
+}
+
+.subscription .image {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.subscription .img-first {
+    position: relative;
+    top: 34px;
+    margin-right: 30px;
+}
+
+.subscription .img-second {
+    margin-right: 130px;
+}
+
+.subscription-info {
+    padding: 58px 0 0;
+}
+
+.subscription-info .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+    margin-bottom: 16px;
+}
+
+.subscription-info .desc {
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.subscription span {
+    display: block;
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.subscription .btn {
+    margin-top: 32px;
+    min-width: 137px;
+}
+
+.subscription .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.subscription .bottom-row {
+    display: flex;
+}
+
+.bottom-row .subscription-info {
+    width: 48.7%;
+    margin-right: 130px;
+}
+
+.bottom-row .image {
+    width: 470px;
+    height: 440px;
 }
