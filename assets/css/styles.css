@@ -122,6 +122,8 @@ a {
 .sticky-header .btn {
     font-size: 1.6rem;
     min-width: 144px;
+    line-height: 1.75;
+    padding: 11px 16px;
 }
 
 /* hero */
@@ -219,9 +221,10 @@ a {
 .hero .btn {
     font-size: 1.8rem;
     min-width: 180px;
-    padding: 19px 16px;
+    padding: 17px 16px;
     border-radius: 32px;
     margin-right: 28px;
+    line-height: 1.6667;
 }
 
 .hero .btn-2 {
@@ -542,6 +545,8 @@ a {
     margin-top: 32px;
     min-width: 137px;
     font-size: 1.6rem;
+    line-height: 1.75;
+    padding: 11px 16px;
 }
 
 .subscription .bottom-row {
@@ -740,7 +745,11 @@ a {
     font-weight: 600;
 }
 
-.footer b:hover {
+.footer u {
+    text-decoration: none;
+}
+
+.footer u:hover {
     text-decoration: underline;
 }
 
