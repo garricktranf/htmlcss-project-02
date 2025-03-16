@@ -735,7 +735,16 @@ a {
     line-height: 1.86;
 }
 
-.footer .item a:hover {
+.footer b {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.footer b:hover {
+    text-decoration: underline;
+}
+
+.footer .item .link:hover {
     text-shadow: 0 0 1px #fff;
     text-decoration: underline;
 }
