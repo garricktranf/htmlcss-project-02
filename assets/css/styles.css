@@ -6,6 +6,7 @@
     --primary-color: #171100;
     --secondary-color: #FFB900;
     --desc-color: #5F5B53;
+    --background-color: #FFFCF4;
 }
 
 html,
@@ -49,6 +50,10 @@ a {
     padding: 12px 16px;
 }
 
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 2);
@@ -61,7 +66,7 @@ a {
     position: sticky;
     z-index: 1;
     top: -22px;
-    background: #FFFCF4;
+    background: var(--background-color);
     padding-top: 20px;
 }
 
@@ -118,13 +123,9 @@ a {
     min-width: 144px;
 }
 
-.sticky-header .btn:hover {
-    background: var(--secondary-color);
-}
-
 /* hero */
 .hero {
-    background-color: #FFFCF4;
+    background-color: var(--background-color);
     padding-top: 38px;
     height: calc(100vh - 102px);
 }
@@ -221,11 +222,6 @@ a {
     border-radius: 32px;
     margin-right: 28px;
 }
-
-.hero .btn:hover {
-    background-color: var(--secondary-color);
-}
-
 
 .hero .btn-2 {
     display: flex;
@@ -353,6 +349,7 @@ a {
     width: 31.6%;
     border-radius: 12px;
     border: 1px solid #E2DFDA;
+    background-color: #fff;
     transition: box-shadow 0.3s ease;
 }
 
@@ -417,10 +414,6 @@ a {
 
 .courses .bottom-row .btn {
     margin-left: auto;
-}
-
-.courses .bottom-row .btn:hover {
-    background-color: var(--secondary-color);
 }
 
 /* reviews */
@@ -549,10 +542,6 @@ a {
     min-width: 137px;
 }
 
-.subscription .btn:hover {
-    background-color: var(--secondary-color);
-}
-
 .subscription .bottom-row {
     display: flex;
 }
@@ -565,4 +554,110 @@ a {
 .bottom-row .image {
     width: 470px;
     height: 440px;
+}
+
+/* blog */
+.blog {
+    background: var(--background-color);
+    padding: 96px 0;
+}
+
+.blog .title {
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+    margin-bottom: 16px;
+}
+
+.blog .desc {
+    color: #696262;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-bottom: 55px;
+}
+
+.blog .list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 28px;
+}
+
+.blog .item {
+    display: flex;
+    width: 31.6%;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.blog .item:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog .blog-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.blog .blog-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 28px 20px;
+}
+
+.blog .time {
+    position: relative;
+    margin-left: 10px;
+    color: var(--desc-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    margin-bottom: 12px;
+}
+
+.blog .time::before {
+    position: absolute;
+    top: 9px;
+    left: -8px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--secondary-color);
+    border-radius: 999px;
+}
+
+.blog .separate {
+    width: 48.5%;
+    height: 1px;
+    background-color: #E2DFDA;
+    margin-bottom: 12px;
+}
+
+.blog .blog-title {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-bottom: 12px;
+    word-break: break-all;
+}
+
+.blog .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.blog .blog-nav {
+    display: block;
+    margin: 0 auto;
 }
