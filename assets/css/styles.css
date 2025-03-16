@@ -120,6 +120,7 @@ a {
 }
 
 .sticky-header .btn {
+    font-size: 1.6rem;
     min-width: 144px;
 }
 
@@ -217,6 +218,7 @@ a {
 }
 
 .hero .btn {
+    font-size: 1.8rem;
     min-width: 180px;
     padding: 19px 16px;
     border-radius: 32px;
@@ -540,6 +542,7 @@ a {
 .subscription .btn {
     margin-top: 32px;
     min-width: 137px;
+    font-size: 1.6rem;
 }
 
 .subscription .bottom-row {
@@ -574,12 +577,13 @@ a {
 }
 
 .blog .desc {
+    width: 38.29%;
     color: #696262;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
-    margin-bottom: 55px;
+    margin: 0 auto 55px;
 }
 
 .blog .list {
@@ -644,11 +648,14 @@ a {
 }
 
 .blog .blog-title {
+    margin-bottom: 12px;
+}
+
+.blog .blog-title a {
     color: var(--primary-color);
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
-    margin-bottom: 12px;
     word-break: break-all;
 }
 
@@ -660,4 +667,88 @@ a {
 .blog .blog-nav {
     display: block;
     margin: 0 auto;
+}
+
+/* footer */
+.footer {
+    padding: 96px 0 28px;
+    background: #2E2100;
+}
+
+.footer .container {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+    margin-bottom: 28px;
+}
+
+.footer .column {
+    flex: 1;
+}
+
+.footer .column:first-child {
+    flex: 1.5;
+}
+
+.footer .logo {
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.footer .desc {
+    width: 68.5%;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+.footer .social {
+    font-size: 0;
+}
+
+.footer .social .fa-brands {
+    color: #fff;
+    margin-right: 14px;
+    font-size: 1.6rem;
+}
+
+.footer .title {
+    color: #FFF;
+    font-size: 1.6re;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-bottom: 14px;
+}
+
+.footer .separate {
+    max-width: 130px;
+    height: 1px;
+    background-color: #59554B;
+    margin-bottom: 28px;
+}
+
+.footer .item a {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .item a:hover {
+    text-shadow: 0 0 1px #fff;
+    text-decoration: underline;
+}
+
+.footer .item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.footer .copyright {
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
 }
